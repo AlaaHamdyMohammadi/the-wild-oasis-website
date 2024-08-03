@@ -1,7 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
+import Navigation from "./components/navigation";
 
 export default function Page() {
   return (
-    <h1>The Wild Oasis!</h1>
+    <div>
+      <h1>The Wild Oasis!</h1>
+      <Navigation/>
+    </div>
   );
 }
