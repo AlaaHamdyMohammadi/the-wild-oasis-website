@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "./_components/navigation";
 import Logo from "./_components/logo";
-
+import "@/app/_styles/globals.css";
 export const metadata = {
   title: "The Wild Oasis",
   description: "The best resort in the world",
@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-primary-400 min-h-screen">
         <header>
           <Logo />
           <Navigation />
