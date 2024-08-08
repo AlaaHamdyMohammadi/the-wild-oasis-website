@@ -1,0 +1,4 @@
+Next notes
+
+1- to make unvisible route or make this folder can't be have route, you can use _ 
+	EX; app/_components
