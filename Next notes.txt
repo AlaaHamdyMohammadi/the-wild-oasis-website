@@ -1,4 +1,14 @@
 Next notes
 
-1- to make unvisible route or make this folder can't be have route, you can use _ 
+1- To make unvisible route or make this folder can't be have route, you can use _ 
 	EX; app/_components
+
+2- To can child pages inhiret the title of layout, you can write the metadata with this way:
+	export const metadata = {
+		title: {
+			template: '%s | The Wild Oasis',
+			default: "Welcome | The Wild Oasis",
+		},
+	};
+
+3- To make an icon behind the title in the top of browser tab, you can put the image into app folder and change name of this image to icon word.

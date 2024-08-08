@@ -1,10 +1,14 @@
-import React from "react";
 import Navigation from "./_components/navigation";
 import Logo from "./_components/logo";
 import "@/app/_styles/globals.css";
+
 export const metadata = {
-  title: "The Wild Oasis",
-  description: "The best resort in the world",
+  title: {
+    template: "%s The Wild Oasis",
+    default: "Welcome | The Wild Oasis",
+  },
+  description:
+    "Luxurious cabin hotal, located in the heart of the Italian Dolomites, surrounded by beautiful mountains and  dark forests.",
 };
 
 export default function RootLayout({ children }) {
