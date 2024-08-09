@@ -7,9 +7,11 @@ export const metadata = {
 const Page = () => {
   return (
     <div>
-      account
+      <h2 className="font-semibold text-2xl text-accent-400 mb-4">
+        Welcome, USERNAME
+      </h2>
     </div>
-  )
+  );
 }
 
 export default Page
