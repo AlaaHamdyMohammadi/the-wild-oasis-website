@@ -14,3 +14,14 @@ Next notes
 3- To make an icon behind the title in the top of browser tab, you can put the image into app folder and change name of this image to icon word.
 
 4- We have steps to add custom font in layout page.
+
+5- Image improve in homepage:
+	<Image
+        src={bg}
+        fill
+        placeholder="blur" // just work with the imported image not the src have a url of image
+        alt="Mountains and forests with two cabins"
+        className="object-cover object-top"
+    />
+
+	
