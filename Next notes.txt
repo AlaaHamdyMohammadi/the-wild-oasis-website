@@ -24,4 +24,4 @@ Next notes
         className="object-cover object-top"
     />
 
-	
+6- You can build a nested layout to own nested routes, these example in accout folder	
