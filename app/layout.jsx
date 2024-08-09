@@ -1,7 +1,6 @@
-import Navigation from "./_components/navigation";
-import Logo from "./_components/logo";
 import "@/app/_styles/globals.css";
 import { Josefin_Sans } from "next/font/google";
+import Header from "./_components/Header";
 
 const jpsefin = Josefin_Sans({
   subsets: ["latin"],
@@ -22,13 +21,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${jpsefin.className} bg-primary-400 min-h-screen`}>
+      <body
+        className={`${jpsefin.className} antialiased bg-primary-950 text-primary-100 min-h-screen flex flex-col`}
+      >
         <header>
-          <Logo />
-          <Navigation />
+          <Header />
         </header>
-        <main>{children}</main>
-        <footer>Copyright by The Wild Oasis</footer>
+        <div className="flex-1 px-8 py-12">
+          <main className="max-w-7xl mx-auto">{children}</main>
+        </div>
       </body>
     </html>
   );
