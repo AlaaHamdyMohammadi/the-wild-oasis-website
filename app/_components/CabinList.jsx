@@ -1,8 +1,10 @@
 import React from 'react'
 import CabinCard from './CabinCard';
 import { getCabins } from "../_lib/data-service";
-const CbinList = async () => {
+
+const CabinList = async () => {
   const cabins = await getCabins();
+  console.log("cabins", cabins);
   if (!cabins.length) return null;
   return (
     <>
@@ -17,4 +19,4 @@ const CbinList = async () => {
   );
 };
 
-export default CbinList
+export default CabinList
