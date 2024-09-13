@@ -24,4 +24,10 @@ Next notes
         className="object-cover object-top"
     />
 
-6- You can build a nested layout to own nested routes, these example in accout folder	
+6- You can build a nested layout to own nested routes, these example in accout folder.
+
+7- You can use Suspence from react to loading just the fetch data to prevent make loading in all page (static + dynamic data), so this suspence will loading the data from backend
+	<Suspense fallback={<Spinner/>}>
+        <CabinList />
+    </Suspense>
+	it take the fallback component to be used.
