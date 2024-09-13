@@ -2,7 +2,7 @@ import { eachDayOfInterval } from 'date-fns';
 
 import { supabase } from './supabase';
 
-/////////////
+///////////
 // GET
 
 export async function getCabin(id) {
