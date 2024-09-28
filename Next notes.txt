@@ -31,3 +31,12 @@ Next notes
         <CabinList />
     </Suspense>
 	it take the fallback component to be used.
+
+8- To make dynamic metaData for dynamic routes: 
+	export async function generateMetadata({ params }) {
+	const cabin = await getCabin(params.cabinId);
+	console.log("cabin", cabin);
+	return {title: `Cabin ${cabin.name}`}
+	}	
+
+	-> in the to before component name
