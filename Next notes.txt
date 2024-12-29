@@ -40,3 +40,9 @@ Next notes
 	}	
 
 	-> in the to before component name
+
+9- When Nexy.JS switch to dynamic rendering
+	1- The route has dynamic segment (page uses params)
+	2- searchParams are used in the page component (/product?quentity=23)
+	3- headers() or cookies() are used in any of the route's server components
+	4- An uncached data request is made in any of the route's server component 	
